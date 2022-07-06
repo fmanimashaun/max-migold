@@ -1,0 +1,61 @@
+/*Universal Styling*/
+
+body {
+    width: 100vw;
+    height: 100vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.icon.search, .icon.menu  {
+    display: none;
+}
+
+/*Styling the header container*/
+.header-container {
+    border: 2px solid black;
+    margin: 1.806vw 10.833vw 1.875vw 8.125vw;
+}
+
+/*Navigation Styling*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.nav-search label, .nav-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    column-gap: 20px;
+}
+
+
+
+@media only screen and (max-width: 1024px) {}
+
+
+
+/*Mobile screens*/
+@media only screen and (max-width: 500px) {
+
+}
+
+
+
+
