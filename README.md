@@ -1,2 +1,3 @@
-# max-migold
-All my projects with Max-migold Limited
+# Max-migold Projects
+
+## in2it Africa website
