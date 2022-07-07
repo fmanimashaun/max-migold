@@ -108,6 +108,19 @@ nav {
 }
 
 
+.one, .two {
+    border: 2px solid red;
+
+}
+
+.testing {
+    display: grid;
+    grid-template-columns: minmax(5.3125rem, 11.875rem) 1fr;
+    height: 300px;
+    border: 2px solid blue;
+}
+
+
 
 @media only screen and (max-width: 1024px) {
     .nav-links {
