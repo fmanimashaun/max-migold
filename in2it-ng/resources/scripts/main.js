@@ -26,3 +26,4 @@ window.addEventListener("resize", function() {
         secondaryMenu.style.display = 'none';
     }
 });
+
