@@ -23,35 +23,33 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <nav>
-                <div class="left-col logo">
-                    <a href="/in2it-ng/index.html">
-                        <img src="/in2it-ng/resources/images/in2it_logo.png" alt="logo" class="logo">
-                    </a>
+    <header class="header-container">
+        <nav>
+            <div class="left-col logo">
+                <a href="/in2it-ng/index.html">
+                    <img src="/in2it-ng/resources/images/in2it_logo.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="right-col navbar">
+                <div class="nav-search">
+                    <label for="page-search">SEARCH:</label>
+                    <input type="search" name="page-search" id="page-search">
                 </div>
-                <div class="right-col navbar">
-                    <div class="nav-search">
-                        <label for="page-search">SEARCH:</label>
-                        <input type="search" name="page-search" id="page-search">
-                    </div>
-                    <div class="nav-links">
-                        <ul>
-                            <li><a href="/in2it-ng/index.html" class="active">HOME</a></li>
-                            <li><a href="/in2it-ng/components/offers.html">OUR OFFERS</a></li>
-                            <li><a href="/in2it-ng/components/about.html">ABOUT US</a></li>
-                            <li><a href="/in2it-ng/components/team.html">OUR TEAM</a></li>
-                            <li><a href="/in2it-ng/components/contact.html">CONTACT US</a></li>
-                        </ul>
-                    </div>
-                    <div class="icon">
-                        <img src="/in2it-ng/resources/images/search-icon.png" alt="search icon" class="search">
-                        <img src="/in2it-ng/resources/images/menu-icon.png" alt="menu icon" id="menu-btn" class="menu">
-                    </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="/in2it-ng/index.html" class="active">HOME</a></li>
+                        <li><a href="/in2it-ng/components/offers.html">OUR OFFERS</a></li>
+                        <li><a href="/in2it-ng/components/about.html">ABOUT US</a></li>
+                        <li><a href="/in2it-ng/components/team.html">OUR TEAM</a></li>
+                        <li><a href="/in2it-ng/components/contact.html">CONTACT US</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
+                <div class="icon">
+                    <img src="/in2it-ng/resources/images/search-icon.png" alt="search icon" class="search">
+                    <img src="/in2it-ng/resources/images/menu-icon.png" alt="menu icon" id="menu-btn" class="menu">
+                </div>
+            </div>
+        </nav>
         <div id="secondary-nav">
             <ul>
                 <li><a href="/in2it-ng/index.html" class="active">HOME</a></li>
@@ -61,8 +59,21 @@
                 <li><a href="/in2it-ng/components/contact.html">CONTACT US</a></li>
             </ul>
         </div>
+
     </header>
     <main>
+        <section class="slides">
+            <img src="/in2it-ng/resources/images/digital-solution-lg.svg" alt="Digital Solutiion" class="outer-slide">
+            <div class="slider-arrow">
+                <img src="/in2it-ng/resources/images/left-arrow-outlined.svg" alt="left arrow" class="left-arrow">
+                <img src="/in2it-ng/resources/images/right-arrow-outlined.svg" alt="right arrow" class="right-arrow">
+            </div>
+            <figure class="inner-slide-container">
+                <img src="/in2it-ng/resources/images/FM-IOT.jpg" alt="FM IOT" class="inner-slide">
+                <figcaption>FACILITY MANAGEMENT AND IOT</figcaption>
+            </figure>
+            <span class="out-slide-text">Digital Solutions</span>
+        </section>
     </main>
     <footer></footer>
     <script src="/in2it-ng/resources/scripts/main.js"></script>
