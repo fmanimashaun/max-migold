@@ -24,7 +24,7 @@ const sliderPictureImgSource = document.querySelector('#img_source');
 //Slider1 files path
 const slider1 = {
     folder: "slider1_set",
-    source1: ["digital_solution_d6clej_ar_1_1,c_fill,g_auto__c_scale,w_300.jpg 300w,digital_solution_d6clej_ar_1_1,c_fill,g_auto__c_scale,w_440.jpg 440w"],
+    source1: ["digital_solution_d6clej_ar_1_1,c_fill,g_auto__c_scale,w_300.jpg 300w", "digital_solution_d6clej_ar_1_1,c_fill,g_auto__c_scale,w_440.jpg 440w"],
     source2: ["digital_solution_d6clej_ar_4_3,c_fill,g_auto__c_scale,w_586.jpg 586w"],
     source3: ["digital_solution_d6clej_ar_16_9,c_fill,g_auto__c_scale,w_781.jpg 781w"],
     img_srcset: ["digital_solution_d6clej_ar_16_9,c_fill,g_auto__c_scale,w_781.jpg 781w"],
@@ -34,7 +34,7 @@ const slider1 = {
 //Slider2 files path
 const slider2 = {
     folder: "slider2_set",
-    source1: ["Scan2BIM_chywhr_ar_1_1,c_fill,g_auto__c_scale,w_300.jpg 300w,Scan2BIM_chywhr_ar_1_1,c_fill,g_auto__c_scale,w_407.jpg 407w,Scan2BIM_chywhr_ar_1_1,c_fill,g_auto__c_scale,w_440.jpg 440w"],
+    source1: ["Scan2BIM_chywhr_ar_1_1,c_fill,g_auto__c_scale,w_300.jpg 300w", "Scan2BIM_chywhr_ar_1_1,c_fill,g_auto__c_scale,w_407.jpg 407w", "Scan2BIM_chywhr_ar_1_1,c_fill,g_auto__c_scale,w_440.jpg 440w"],
     source2: ["Scan2BIM_chywhr_ar_4_3,c_fill,g_auto__c_scale,w_586.jpg 586w"],
     source3: ["Scan2BIM_chywhr_ar_16_9,c_fill,g_auto__c_scale,w_781.jpg 781w"],
     img_srcset: ["Scan2BIM_chywhr_ar_16_9,c_fill,g_auto__c_scale,w_781.jpg 781w"],
@@ -44,7 +44,7 @@ const slider2 = {
 //Slider3 files path
 const slider3 = {
     folder: "slider3_set",
-    source1: ["training-coaching_xcjcan_ar_1_1,c_fill,g_auto__c_scale,w_300.jpg 300w,training-coaching_xcjcan_ar_1_1,c_fill,g_auto__c_scale,w_440.jpg 440w"],
+    source1: ["training-coaching_xcjcan_ar_1_1,c_fill,g_auto__c_scale,w_300.jpg 300w", "training-coaching_xcjcan_ar_1_1,c_fill,g_auto__c_scale,w_440.jpg 440w"],
     source2: ["training-coaching_xcjcan_ar_4_3,c_fill,g_auto__c_scale,w_586.jpg 586w"],
     source3: ["training-coaching_xcjcan_ar_16_9,c_fill,g_auto__c_scale,w_781.jpg 781w"],
     img_srcset: ["training-coaching_xcjcan_ar_16_9,c_fill,g_auto__c_scale,w_781.jpg 781w"],
@@ -57,7 +57,12 @@ const sliderSourcePath = {
     slider_sources: function (source, folderName) {
         let sourcePath = "";
         for (let i = 0; i < source.length; i++) {
-            sourcePath += "\n                " + this.path + folderName + "/" + source[i];
+            if(i === 0) {
+                sourcePath += this.path + folderName + "/" + source[i];
+            } else {
+                sourcePath += ", " + this.path + folderName + "/" + source[i];
+            }
+            
         }
         return sourcePath;
     }
